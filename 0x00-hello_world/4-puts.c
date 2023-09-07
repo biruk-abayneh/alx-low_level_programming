@@ -1,9 +1,11 @@
 #include <stdio.h>
-/*
- * This prints a string
+/**
+ * main - This it the entry point of the function
+ * description: This prints a string
+ * return - 0 and exit
  */
-int main()
+int main(void)
 {
-  puts("\"Programming is like building a multilingual puzzle");
-  return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
