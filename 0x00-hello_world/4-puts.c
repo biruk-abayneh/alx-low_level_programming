@@ -2,7 +2,7 @@
 /**
  * main - This it the entry point of the function
  * description: This prints a string
- * return - 0 and exit
+ * Return - 0 and exit
  */
 int main(void)
 {
