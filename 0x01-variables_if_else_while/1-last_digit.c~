@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+ * main - Main is the entry point
+ * Return: 0 and exit
+ */
+
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	char last_num;
+	int i = 0;
+	while ( n[i] != "\0")
+	{
+	last_num = n[i];
+	}
+	if (last_num > 5)	
+	  printf("The last digit of %d is %d and is greater that 5\n" , n, last_num);
+	else if (last_num == 0)
+	  printf("The last digit of %d is %d and is zero\n" , n, last_num);
+	else
+	  printf("The last digit of %d is %d and is less than 6 and not 0\n" , n, last_num);
+	return (0);
+}
