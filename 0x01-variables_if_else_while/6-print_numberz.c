@@ -14,6 +14,6 @@ while (i < 10)
 putchar(letter[i]);
 i++;
 }
-printf("\n");
+putchar("\n");
 return (0);
 }
