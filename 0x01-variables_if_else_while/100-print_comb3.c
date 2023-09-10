@@ -14,7 +14,7 @@ for (j = i + 1; j < 10; j++)
 putchar('0' + i);
 putchar('0' + j);
 putchar((i != 8 || j != 9) ? ',' : '\n');
-putchar(' ');
+putchar((i != 8 || j != 9) ? ' ' : '\0');
 }
 }
 return (0);
