@@ -13,8 +13,8 @@ for (j = i + 1; j < 10; j++)
 {
 putchar('0' + i);
 putchar('0' + j);
-putchar((i != 8 || j != 9) ? ',' : '\n');
-putchar((i != 8 || j != 9) ? ' ' : '\0');
+putchar((i != 8 || j != 9) ? ',' : '\0');
+putchar((i != 8 || j != 9) ? ' ' : '\n');
 }
 }
 return (0);
