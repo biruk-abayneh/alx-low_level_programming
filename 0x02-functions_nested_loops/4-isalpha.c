@@ -7,14 +7,5 @@
 
 int _isalpha(int c)
 {
-int condtion1 = (c >= 'a' && c <= 'z');
-int condtion2 = (c >= 'A' && c <= 'Z');
-if (condtion1 || condtion2);
-{
-return (1);
-}
-else
-{
-return (0);
-}
+return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
