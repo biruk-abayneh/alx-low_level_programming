@@ -7,10 +7,13 @@
 
 void print_to_98(int n)
 {
+int i;
+
 for (i = n; i < 99; i++)
 {
 _putchar('0' + i);
 _putchar((i == 98) ? ',' : '\0');
 _putchar((i == 98) ? ' ' : '\0');
-return (x);
+}
+return (0);
 }
