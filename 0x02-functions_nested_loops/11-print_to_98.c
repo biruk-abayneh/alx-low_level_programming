@@ -11,9 +11,8 @@ int i;
 
 for (i = n; i < 99; i++)
 {
-return('0' + i);
-return((i == 98) ? ',' : '\0');
-return((i == 98) ? ' ' : '\0');
+_putchar('0' + i);
+_putchar((i == 98) ? ',' : '\0');
+_putchar((i == 98) ? ' ' : '\0');
 }
-return (0);
 }
