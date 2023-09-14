@@ -38,7 +38,7 @@ else if ((k >= 10) && (k < 100))
 {
 _putchar('0' + (k / 10));
 _putchar('0' + (k % 10));
- if (j == n)
+if (j == n)
 {
 _putchar('\n');
 }
@@ -47,6 +47,7 @@ else if (j < n)
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+}
 }
 else if (k >= 100)
 {
@@ -61,8 +62,6 @@ else if (j < n)
 {
 _putchar(',');
 _putchar(' ');
-}
-}
 }
 }
 }
