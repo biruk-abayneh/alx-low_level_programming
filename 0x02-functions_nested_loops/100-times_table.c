@@ -21,7 +21,7 @@ for (j = 0; j < n + 1; j++)
 k = i * j;
 if (k < 10)
 _putchar('0' + k);
-else if ((k > 10) && (k < 100))
+else if ((k >= 10) && (k < 100))
 {
 _putchar('0' + (k / 10));
 _putchar('0' + (k % 10));
