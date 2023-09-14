@@ -7,9 +7,10 @@
 
 int main(void)
 {
-unsigned long i, x, y, z;
+unsigned long i, sum, x, y, z;
 
 x = 0;
+sum = 0;
 y = 1;
 for (i = 0; i < 50; i++)
 {
@@ -18,15 +19,12 @@ if (z < 4000000)
 {
 if (z % 2 == 0)
 {
-printf("%lu", z);
-if (i == 31)
-printf("\n");
-else
-printf(", ");
+sum = sum + z;
 }
 x = y;
 y = z;
 }
 }
+printf("%lu\n", sum);
 return (0);
 }
