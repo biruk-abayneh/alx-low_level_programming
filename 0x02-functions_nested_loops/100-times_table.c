@@ -19,7 +19,7 @@ for (i = 0; i < n + 1; i++)
 for (j = 0; j < n + 1; j++)
 {
 k = i * j;
-_putchar(k);
+_putchar('0' + k);
 if (j == n)
 {
 _putchar('\n');
