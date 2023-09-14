@@ -48,7 +48,7 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
-else
+else if (k >= 100)
 {
 _putchar('0' + (k / 100));
 _putchar('0' + ((k / 10) % 10));
