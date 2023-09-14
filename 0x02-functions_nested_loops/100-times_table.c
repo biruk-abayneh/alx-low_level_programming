@@ -28,6 +28,7 @@ else if (j < n)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 }
 }
 }
