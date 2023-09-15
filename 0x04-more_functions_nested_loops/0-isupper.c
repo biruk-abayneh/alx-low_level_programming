@@ -4,11 +4,14 @@
  * @c: letter to be checked
  * Return: either 0 or 1
  */
-
 int _isupper(int c)
 {
-if (c > 'A' && c < 'Z')
+if (c >= 'A' && c <= 'Z')
+{
 return (1);
-else if (c > 'a' && c < 'z')
+}
+else if (c >= 'a' && c <= 'z')
+{
 return (0);
+}
 }
