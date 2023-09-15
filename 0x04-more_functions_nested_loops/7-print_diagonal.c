@@ -2,26 +2,28 @@
 
 /**
  * print_diagonal - print a diagonal line
- *
- * Return: Always 0.
+ * @n: number of diagonal
+ * Return: diagonal
  */
 
 void print_diagonal(int n)
 {
-if ( n <= 0)
+if (n <= 0)
+{
 _putchar('\n');
+}
 else
 {
 int i, j;
 
 for (i = 0; i < n; i++)
 {
-for (j = 0; j < i; j++)
+for (j = 0; j < n; j++)
 {
 if (j == i)
-_putchar(' ');
-else
 _putchar('\\');
+else if (j < i)
+_putchar(' ');
 }
 _putchar('\n');
 }
