@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - check the code
  * @s: string to check
@@ -8,7 +7,7 @@
 
 int _strlen(char *s)
 {
-int count;
+int count = 0;
 
 while (*s != '\0')
 {
