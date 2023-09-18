@@ -15,6 +15,7 @@ while (*s != '\0')
 c++;
 s++;
 }
+s--;
 for (i = c; i > 0; i--)
 {
 _putchar(*s);
