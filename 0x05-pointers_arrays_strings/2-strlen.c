@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * _strlen - check the code
  * @s: string to check
  * Return: Always 0.
  */
