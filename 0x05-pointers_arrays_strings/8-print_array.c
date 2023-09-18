@@ -10,7 +10,7 @@
 void print_array(int *a, int n)
 {
 int i;
-int s = sizeof(*a);
+int s = sizeof(*a) / sizeof(*a[0]);
 
 if (s != n)
 printf("\n");
