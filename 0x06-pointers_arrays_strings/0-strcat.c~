@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * _strcat - concatenate strings
+ * @dest: first string to check
+ * @src: string to add to dest
+ * Return: added string
+ */
+
+char *_strcat(char *dest, char *src)
+{
+    int i, l, a;
+
+    i = 0;
+    while (*(dest + i))
+    {
+	i++;
+    }
+    l = 0;
+    while (*(src + l))
+    {
+	l++;
+    }
+
+    for (a = 0; a < l; a++)
+    {
+	dest[(i + a)] = src[a];
+    }
+    return (dest);
+}
