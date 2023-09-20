@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncpy - copy string
  * @dest: string
@@ -10,34 +9,19 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int i, l, a;
+int j;
 
-i = 0;
-while (*(dest + i))
+j = 0;
+while (j < n && src[j] != '\0')
 {
-i++;
+dest[j] = src[j];
+j++;
+}
+while (j < n)
+{
+dest[j] = '\0';
+j++;
 }
 
-l = 0;
-while (*(src + l))
-{
-l++;
-}
-
-if (n < l)
-{
-for (a = 0; a < n; a++)
-{
-dest[a] = src[a];
-}
-}
-else if (n >= l)
-{
-for (a = 0; a < l; a++)
-{
-dest[a] = src[a];
-}
-dest[l] = '\0';
-}
 return (dest);
 }
