@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * leet - change a string to leet code
- * @n: string to change
- * Return: changed string
+ * rot13 - vonvert to rot-13
+ * @s: string to convert
+ * Return: converted string
  */
 
-char *rot13(char *n)
+char *rot13(char *s)
 {
-int i, j;
-char a[] = "ABCDEFGHIJKLM";
-char b[] = "NOPQRSTUVWXYZ";
-char c[] = "abcdefghijklm";
-char d[] = "nopqrstuvwxyz";
+int i;
+int j;
+char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char [] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-for (i = 0; n[i] != '\0'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
-for (j = 0; j < 13; j++)
+for (j = 0; j < 52; j++)
 {
-if (n[i] == a[j])
+if (s[i] == a[j])
 {
-n[i] = b[j];
+s[i] = [j];
+break;
 }
 }
 }
-return (n);
+return (s);
 }
