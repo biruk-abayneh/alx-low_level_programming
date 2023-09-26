@@ -1,8 +1,8 @@
-
 #include "main.h"
 
 /**
- * _strpbrk -  locates the first occurrence in the string s of any of the bytes in the string accept
+ * _strpbrk -  locates the first occurrence in
+ * the string s of any of the bytes in the string accept
  * @s: string
  * @accept: substring
  * Return: location of first occurence
@@ -18,7 +18,7 @@ for (j = 0; accept[j] != '\0'; j++)
 {
 if (s[i] == accept[j])
 {
-return &s[i];
+return (&s[i]);
 }
 }
 }
