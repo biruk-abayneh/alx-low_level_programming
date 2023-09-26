@@ -1,9 +1,11 @@
+
 #include "main.h"
 
 /**
  * _strpbrk -  locates the first occurrence in the string s of any of the bytes in the string accept
  * @s: string
  * @accept: substring
+ * Return: location of first occurence
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -21,5 +23,5 @@ return &s[i];
 }
 }
 
-return NULL;
+return ('\0');
 }
