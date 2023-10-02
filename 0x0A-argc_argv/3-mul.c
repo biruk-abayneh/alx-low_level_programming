@@ -16,11 +16,6 @@ if (argc < 3 || argc > 3)
 	printf("Error\n");
 	return (1);
 }
-int x, a, b;
-
-a = atoi(argv[1]);
-b = atoi(argv[2]);
-x = a *b;
-printf("%d\n", x);
+printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 return (0);
 }
