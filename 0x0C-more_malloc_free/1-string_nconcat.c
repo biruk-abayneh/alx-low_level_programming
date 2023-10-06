@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - cocatenates two strings
+ * *string_nconcat - cocatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: size of memory
