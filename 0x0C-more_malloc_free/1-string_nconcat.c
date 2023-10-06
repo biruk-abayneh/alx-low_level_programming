@@ -40,7 +40,7 @@ if (n >= len2)
 }
 else
 {
-	while ( i < (len + n))
+	while (i < (len + n))
 	{
 	ptr[i] = s2[(i - len)];
 	i++;
