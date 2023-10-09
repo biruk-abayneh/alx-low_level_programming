@@ -16,3 +16,4 @@ float age;
 char *owner;
 } dog;
 
+#endif
