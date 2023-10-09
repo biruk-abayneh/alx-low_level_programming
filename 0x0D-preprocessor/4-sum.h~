@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define SUM(x, y) ((x) + (y))
+
+int main()
+{
+    int x = 3;
+    int y = 8;
+    int sum;
+
+    sum = SUM(x, y);
+    printf("%d\n", sum);
+    return (0);
+}
+
+    
