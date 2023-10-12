@@ -1,37 +1,25 @@
-#include "main.h"
+#include "variadic_functions.h"
+#include <stdarg.h>
 
-void printInt(unsigned int num)
-{
-    char digits[10]; /* Maximum number of digits in an int */
-    int i = 0;
-    if (num == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
-	while (num > 0)
-	{
-		digits[i++] = num % 10 + '0'; /* Convert digit to character representation */
-		num /= 10;
-	}
-
-	while (i > 0)
-	{
-		_putchar(digits[--i]);
-	}
-}
-
+/**
+ * sum_them_all - Returns the sum of all its paramters.
+ * @n: The number of paramters passed to the function.
+ * @...: A variable number of paramters to calculate the sum of.
+ *
+ * Return: If n == 0 - 0.
+ *         Otherwise - the sum of all parameters.
+ */
 int sum_them_all(const unsigned int n, ...)
 {
-    va_list const unsigned int num;
-    unsigned int i, sum;
+	va_list ap;
+	unsigned int i, sum = 0;
 
-    sum = 0;
-    va_start(num, n);
-    for (i = n; i >= 0; i = va_arg(num, const unsigned int))
-    {
-	sum = sum + i;
-    }
-    printInt(sum);
+	va_start(ap, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(ap, int);
+
+	va_end(ap);
+
+	return (sum);
 }
