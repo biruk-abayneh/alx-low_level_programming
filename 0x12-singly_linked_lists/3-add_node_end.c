@@ -42,7 +42,7 @@ if (a->str == NULL)
 free(a);
 return (NULL);
 }
-a->len = _strlen(a->str);
+a->len = _strlen_2(a->str);
 a->next = NULL;
 if (*head == NULL)
 {
