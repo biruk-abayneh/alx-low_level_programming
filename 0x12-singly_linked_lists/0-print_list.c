@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "lists.h"
 
 /**
- * prind_list - prints the contents of a struct
+ * print_list - prints the contents of a struct
  * @h: a struct
  * Return: the number of nodes
  */

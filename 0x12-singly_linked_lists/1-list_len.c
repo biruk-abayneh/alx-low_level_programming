@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * list_len - returns the number of nodes
