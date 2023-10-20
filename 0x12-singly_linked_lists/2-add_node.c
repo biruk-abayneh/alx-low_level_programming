@@ -11,14 +11,14 @@
 
 int _strlen(const char *s)
 {
-   int i = 0;
+int i = 0;
 
 
-   while (s[i] != '\0')
-   {
-       i++;
-   }
-   return (i);
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
 
 
@@ -31,19 +31,19 @@ int _strlen(const char *s)
 
 list_t *add_node(list_t **head, const char *str)
 {
-   list_t *a;
+list_t *a;
 
 
-   a = malloc(sizeof(list_t));
-   if (a == NULL)
-       return (NULL);
-   a->str = strdup(str);
+a = malloc(sizeof(list_t));
+if (a == NULL)
+return (NULL);
+a->str = strdup(str);
 
 
-   a->len = _strlen(str);
-   a->next = *head;
-   *head = a;
+a->len = _strlen(str);
+a->next = *head;
+*head = a;
 
 
-   return (a);
+return (a);
 }

@@ -4,18 +4,18 @@
 #include "lists.h"
 
 /**
-* _strlen - returns the length of a string
+* _strlen_2 - returns the length of a string
 * @str: string
 * Return: length of string
 */
-unsigned int _strlen(char *str)
+unsigned int _strlen_2(char *str)
 {
-   unsigned int i;
+unsigned int i;
 
 
-   for (i = 0; str[i]; i++)
-       ;
-   return (i);
+for (i = 0; str[i]; i++)
+;
+return (i);
 }
 
 
@@ -28,30 +28,30 @@ unsigned int _strlen(char *str)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-   list_t *a, *b;
+list_t *a, *b;
 
 
-   if (str == NULL)
-       return (NULL);
-   a = malloc(sizeof(list_t));
-   if (a == NULL)
-       return (NULL);
-   a->str = strdup(str);
-   if (a->str == NULL)
-   {
-       free(a);
-       return (NULL);
-   }
-   a->len = _strlen(a->str);
-   a->next = NULL;
-   if (*head == NULL)
-   {
-       *head = a;
-       return (a);
-   }
-   b = *head;
-   while (b->next)
-       b = b->next;
-   b->next = a;
-   return (a);
+if (str == NULL)
+return (NULL);
+a = malloc(sizeof(list_t));
+if (a == NULL)
+return (NULL);
+a->str = strdup(str);
+if (a->str == NULL)
+{
+free(a);
+return (NULL);
+}
+a->len = _strlen(a->str);
+a->next = NULL;
+if (*head == NULL)
+{
+*head = a;
+return (a);
+}
+b = *head;
+while (b->next)
+b = b->next;
+b->next = a;
+return (a);
 }
