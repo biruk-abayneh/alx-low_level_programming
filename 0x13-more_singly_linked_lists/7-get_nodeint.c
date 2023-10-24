@@ -19,7 +19,7 @@ while (!head)
 head = head->next;
 len++;
 }
-if (index > len)
+if (index >= len)
 return (NULL);
 for (i = 0; i < index; i++)
 {
