@@ -14,7 +14,7 @@ listint_t *current = head;
 unsigned int i, len;
 
 len = 0;
-while (!head)
+while (head->next != NULL)
 {
 head = head->next;
 len++;
