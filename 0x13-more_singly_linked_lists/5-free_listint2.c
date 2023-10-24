@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * free_listint - free the memory of list
+ * free_listint2 - free the memory of list
  * @head: list
  */
 
@@ -13,8 +13,8 @@ listint_t *temp;
 
 while (*head)
 {
-    temp = (*head)->next;
-    free(*head);
+temp = (*head)->next;
+free(*head);
 	*head = temp;
 }
 *head = NULL;
