@@ -28,6 +28,7 @@ void print_binary(unsigned long int n)
 
 	x = 0;
 	a = _pow(2, sizeof(unsigned long int) * 8 - 1);
+	printf("divisor = %ld\n", a);
 	while (a != 0)
 	{
 		b = n & a;
