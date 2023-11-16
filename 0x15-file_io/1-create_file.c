@@ -17,6 +17,7 @@ if (filename == NULL)
 	return (-1);
 if (text_content != NULL)
 {
+len = 0;
 while (text_content[len])
 {
 	len++;

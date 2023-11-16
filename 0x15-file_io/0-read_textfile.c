@@ -30,7 +30,7 @@ if (bytesread == 0)
 {
 	close(a);
 	free(buf);
-	return(0);
+	return (0);
 }
 buf[bytesread] = '\0';
 byteswritten = write(STDOUT_FILENO, buf, bytesread);
