@@ -23,7 +23,7 @@ while (text_content[len])
 
 fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 x = write(fd, text_content, len);
-if (fd == -1 | x == -1)
+if (fd == -1 || x == -1)
 	return (-1);
 close(fd);
 return (1);
