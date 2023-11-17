@@ -23,11 +23,6 @@ fprintf(stderr, "Usage: cp file_from file_to\n");
 	exit(97);
 }
 fd1 = open(av[1], O_RDONLY | O_EXCL);
-if (fd1 == -1)
-{
-fprintf(stderr, "Error: Can't read from file %s\n", av[1]);
-	exit(98);
-}
 fd2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
 if (fd2 == -1)
 {
@@ -36,12 +31,11 @@ fprintf(stderr, "Error: Can't write to %s\n", av[2]);
 }
 while ((r = read(fd1, buf, BUFFER_SIZE)) > 0)
 {
-if (r == -1)
+if (r == -1 || fd1 == -1)
 {
 	fprintf(stderr, "Error: Can't read from file %s\n", av[1]);
 	exit(98);
 }
-
 w = write(fd2, buf, r);
 	if (w == -1)
 	{
@@ -49,12 +43,7 @@ w = write(fd2, buf, r);
 	exit(99);
 	}
 }
-if (close(fd1))
-{
-fprintf(stderr, "Error: Can't close fd\n");
-	exit(100);
-}
-if (close(fd2))
+if (close(fd1) == -1 || close(fd2) == -1)
 {
 fprintf(stderr, "Error: Can't close fd\n");
 	exit(100);
